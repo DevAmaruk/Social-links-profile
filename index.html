@@ -1,34 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social links profile</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+    <title>Frontend Mentor | Social links profile</title>
+  </head>
+  <body>
+    <main>
+      <div class="card-container">
+        <img src="assets/images/Jonathan.png" alt="profile" class="profile" />
+        <section>
+          <h1 class="name">Jonathan Guthauser</h1>
+          <h2 class="location">Geneva, Switzerland</h2>
+          <p class="job__title">"Frontend Developer"</p>
+        </section>
+        <section class="social__links">
+          <a href="https://github.com/DevAmaruk" target="_blank" class="buttons"
+            >GitHub</a
+          >
+          <a
+            href="https://www.frontendmentor.io/profile/DevAmaruk"
+            target="_blank"
+            class="buttons"
+            >Frontend Mentor</a
+          >
+          <a
+            href="https://www.linkedin.com/in/jguthauser"
+            target="_blank"
+            class="buttons"
+            >LinkedIn</a
+          >
+        </section>
+      </div>
+      <section class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ"
+          target="_blank"
+          class="challenge"
+          >Frontend Mentor</a
+        >. Coded by Devamaruk.
+      </section>
+    </main>
+  </body>
 </html>
