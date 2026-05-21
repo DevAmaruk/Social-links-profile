@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("assets/fonts/static/Inter-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("assets/fonts/static/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --bg-page: #141414;
+  --bg-card: #1f1f1f;
+  --text-hover: #333333;
+  --text-primary: #ffffff;
+  --accent: #c4f82a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-page);
+  min-height: 100vh;
+}
+
+.card-container {
+  background-color: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.75rem;
+  padding: 2.5rem;
+  margin: 1.5rem;
+}
+
+.profile {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+
+.name {
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin: 0;
+  padding-top: 1.5rem;
+}
+
+.location {
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 0.875rem;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.job__title {
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.social__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 0.875rem;
+  height: 2.8125rem;
+  background-color: var(--text-hover);
+  border-radius: 0.5rem;
+  color: var(--text-primary);
+}
+
+.buttons:hover {
+  color: var(--text-hover);
+  background-color: var(--accent);
+}
+
+.attribution {
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.challenge {
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-top: 0.5rem;
+}
+
+.challenge:link {
+  color: var(--accent);
+}
+
+.challenge:visited {
+  color: var(--accent);
+}
